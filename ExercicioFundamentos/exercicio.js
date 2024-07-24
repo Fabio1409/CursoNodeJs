@@ -16,7 +16,7 @@ inquirer.prompt([
         throw new Error("O nome e a idade são Obrigatório!")
     }
     console.log(answers);
-    console.log(chalk.bgYellow.black.bold(`O seu nome é: ${answers.nome}, e sua idade é ${answers.idade} anos!`));
+    console.log(chalk.bgYellow.black(`O seu nome é: ${answers.nome}, e sua idade é ${answers.idade} anos!`));
 })
 .catch((err) => console.log(err));
 
